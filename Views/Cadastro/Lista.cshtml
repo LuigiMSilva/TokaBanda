@@ -1,0 +1,40 @@
+﻿@model List<Cadastro>
+@{
+
+    ViewData["Title"] = "Listar Usuarios";
+}
+
+<a href="@Url.Action("Principal")">Criar Pessoa</a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>E-mail</th>
+            <th>Estado</th>
+            <th>Cidade</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int contador = 0; contador < Model.Count; contador++)
+        {
+            <tr>
+                <td>@Model[contador].UsuCodi</td>
+                <td>@Model[contador].Nome</td>
+                <td>@Model[contador].Email</td>
+                <td>@Model[contador].Estado</td>
+                <td>@Model[contador].Cidade</td>
+                <td><a href="~/Cadastro/Editar?id=@Model[contador].UsuCodi">Editar</a></td>
+                <td><a href="~/Cadastro/Excluir?id=@Model[contador].UsuCodi">Excluir</a></td>
+            </tr>
+        }
+
+
+
+    </tbody>
+</table>
+
+

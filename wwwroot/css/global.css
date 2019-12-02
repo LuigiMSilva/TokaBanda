@@ -1,0 +1,49 @@
+body {
+    padding-top: 75px;
+    padding-bottom: 40px;
+    background-color:lightgrey;
+    background-image: url("Fundo.jpeg");
+    -webkit-background-size:cover;
+    background-size: cover;
+    font-family: 'Judson', serif;    
+    color: seashell;
+}
+
+.form-container {
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 21px;
+    padding-left: 20px;
+    border: none;
+    margin: 0 auto;
+    border-radius: 7px;
+    box-shadow: 1px 6px 6px rgba(0,0,0,0.25); 
+}
+.form-container input {
+    margin-bottom: 7px;
+    border: none
+}
+.logo {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.form-control {
+    position: relative;
+    height: auto;
+    padding: 12px;
+    font-size: 15px;
+    z-index: 2;
+    background: rgba(0,0,0,0.25);
+    border: none;
+    
+}
+.form-control:focus {
+    background: transparent;
+    color: white;
+}
+

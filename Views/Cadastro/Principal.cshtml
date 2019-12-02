@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="~/css/global.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Judson:400,700" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="form-group col-md-6">
+
+                <form method="post" action="@Url.Action("Salvar")" class="form-container">
+
+                    <img width="230px" src="~/imagens/LogoTK.jpg" class="logo" alt="TOKA BANDA" />
+                    <hr>
+
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <label>Nome</label>
+                            <input id="Nome" name="Nome" type="text" class="form-control" placeholder="Nome">
+                        </div>
+                        <div class="col">
+                            <label>Sobrenome</label>
+                            <input id="Sobrenome" name="Sobrenome" type="text" class="form-control" placeholder="Sobrenome">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label>Data de nascimento</label>
+                            <input id="DataDeNascimento" name="DataDeNascimento" type="date" max="3000-12-31" min="1000-01-01"
+                                   class="form-control">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label>Genero</label>
+                            <select name="Genero" class="form-control" id="inlineFormCustomSelect">
+                                <option selected>Escolher...</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="container-fluid">
+
+
+                        <hr>
+
+                        <br>
+                        <label>Estado</label>
+                        <select id="Estado" name="Estado" class="form-control">
+                            <option selected> Escolher... </option>
+                            <option value="sp">SP</option>
+                            <option value="rj">RJ</option>
+                            <option value="am">AM</option>
+                            <option value="ce">CE</option>
+                        </select>
+                        <hr>
+                        <label>Cidade</label>
+                        <select class="form-control" id="Cidade" name="Cidade">
+                            <option selected> Escolher... </option>
+                            <option value="sao_paulo">São Paulo</option>
+                            <option value="rio_de_janeiro">Rio de Janeiro</option>
+                            <option value="manaus">Manaus</option>
+                            <option value="fotaleza">Fortaleza</option>
+                        </select>
+                        <hr>
+
+
+                        <label>CEP</label>
+
+                        <input type="text" id="CEP" name="CEP" class="form-control" placeholder="XXXXX-XXX">
+
+                        <hr>
+
+                        <label>Bairro</label>
+                        <input type="text" id="Bairro" name="Bairro" class="form-control" placeholder="Insira seu Bairro">
+
+                        <hr>
+
+                        <label>Logradouro</label>
+                        <input type="text" id="Logradouro" name="Logradouro" class="form-control" placeholder="Insira seu Logradouro">
+                        <hr>
+
+                        <div class="container-fluid">
+                            <div class="col">
+                                <label for="email">Informe seu Email</label>
+                                <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp"
+                                       placeholder="email@exemplo.com">
+                            </div>
+                            <br>
+                            <div class="col">
+                                <label for="confirmaremail">Confirme seu Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                       placeholder="email@exemplo.com">
+                            </div>
+                            <br>
+                            <div class="col">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="form-control" id="Senha" name="Senha" placeholder="Senha">
+                            </div>
+                            <br>
+                            <div class="col">
+                                <label for="confirmarsenha">Confirme sua senha</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
+                            </div>
+                            <hr>
+
+                            <button class="btn btn-lg btn-primary btn-block btn-success" type="submit">Próximo</button>
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
